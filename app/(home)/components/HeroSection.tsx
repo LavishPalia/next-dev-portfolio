@@ -10,13 +10,14 @@ const HeroSection = () => {
         <h1 className='text-4xl lg:text-7xl font-bold'>
           Nice to meet you! 👋 <br />
           <span className='underline underline-offset-8 decoration-green-500'>
-            I'm Lavish.
+            {"I'm Lavish."}
           </span>
         </h1>
 
         <p className='md:w-96 text-lg text-gray-300'>
-          Based in India, I'm a Fullstack developer passionate about building
-          modern web applications that users love
+          {
+            " Based in India, I'm a Fullstack developer passionate about building modern web applications that users love"
+          }
         </p>
 
         <Link

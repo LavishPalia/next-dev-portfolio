@@ -1,8 +1,9 @@
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React from 'react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
-const Navbar = () => {
+const Navbar = ({ className }: { className?: string }) => {
   const socials = [
     {
       Link: 'https://www.linkedin.com/in/lavish-palia/',
@@ -14,15 +15,10 @@ const Navbar = () => {
       Label: 'Github',
       Icon: SiGithub,
     },
-    {
-      Link: 'https://github.com/LavishPalia',
-      Label: 'Github',
-      Icon: SiGithub,
-    },
   ];
 
   return (
-    <nav className='py-10 flex justify-between items-center'>
+    <nav className={cn(className, 'py-10 flex justify-between items-center')}>
       <h1 className='text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2'>
         Lavish Palia 🧑🏻‍💻
       </h1>

@@ -18,7 +18,12 @@ const Navbar = ({ className }: { className?: string }) => {
   ];
 
   return (
-    <nav className={cn(className, 'py-10 flex justify-between items-center')}>
+    <nav
+      className={cn(
+        className,
+        'py-10 flex justify-between items-center animate-move-down'
+      )}
+    >
       <h1 className='text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2'>
         Lavish Palia 🧑🏻‍💻
       </h1>

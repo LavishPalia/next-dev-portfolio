@@ -2,7 +2,6 @@ import React from 'react';
 import {
   SiBootstrap,
   SiExpress,
-  SiFramer,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -19,7 +18,7 @@ const Projects = () => {
     {
       title: 'Developer Portfolio',
       tech: [SiNextdotjs, SiTailwindcss],
-      link: 'http://localhost:3000',
+      link: 'https://next-dev-portfolio-zeta.vercel.app/',
       cover: '/next-portfolio.png',
       background: 'bg-indigo-500',
     },

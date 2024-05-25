@@ -2,11 +2,14 @@ import React from 'react';
 import {
   SiBootstrap,
   SiExpress,
+  SiGit,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiReact,
+  SiRedux,
   SiTailwindcss,
+  SiTypescript,
 } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
@@ -15,6 +18,22 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 const Projects = () => {
   const projects = [
+    {
+      title: 'VideoCave: Streaming Platform',
+      tech: [
+        SiNodedotjs,
+        SiExpress,
+        SiMongodb,
+        SiReact,
+        SiTailwindcss,
+        SiRedux,
+        SiTypescript,
+        SiGit,
+      ],
+      link: '#',
+      cover: '/videocave-homescreen.png',
+      background: 'bg-indigo-500',
+    },
     {
       title: 'Developer Portfolio',
       tech: [SiNextdotjs, SiTailwindcss],

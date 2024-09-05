@@ -1,8 +1,11 @@
 import React from 'react';
 import {
   SiBootstrap,
+  SiCss3,
   SiExpress,
   SiGit,
+  SiHtml5,
+  SiJavascript,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -19,6 +22,13 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 const Projects = () => {
   const projects = [
     {
+      title: 'KanbanKit | Streamline your productivity',
+      tech: [SiReact, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiGit],
+      link: '#',
+      cover: '/kanbanKit.png',
+      background: 'bg-pink-500',
+    },
+    {
       title: 'VideoCave: Streaming Platform',
       tech: [
         SiNodedotjs,
@@ -32,7 +42,7 @@ const Projects = () => {
       ],
       link: '#',
       cover: '/videocave-homescreen.png',
-      background: 'bg-indigo-500',
+      background: 'bg-cyan-600',
     },
     {
       title: 'Developer Portfolio',
@@ -41,13 +51,13 @@ const Projects = () => {
       cover: '/next-portfolio.png',
       background: 'bg-indigo-500',
     },
-    {
-      title: 'eCommerce Platform (Eazycom)',
-      tech: [SiNodedotjs, SiExpress, SiMongodb, SiReact, SiBootstrap],
-      link: '#',
-      cover: '/fullStack-eComm.png',
-      background: 'bg-green-500',
-    },
+    // {
+    //   title: 'eCommerce Platform (Eazycom)',
+    //   tech: [SiNodedotjs, SiExpress, SiMongodb, SiReact, SiBootstrap],
+    //   link: '#',
+    //   cover: '/fullStack-eComm.png',
+    //   background: 'bg-green-500',
+    // },
   ];
 
   return (

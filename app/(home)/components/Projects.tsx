@@ -24,8 +24,8 @@ const Projects = () => {
     {
       title: 'KanbanKit | Streamline your productivity',
       tech: [SiReact, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiGit],
-      link: '#',
-      cover: '/kanbanKit.png',
+      link: 'https://kanbanKit.vercel.app',
+      cover: '/kanban-kit.png',
       background: 'bg-pink-500',
     },
     {
@@ -40,14 +40,14 @@ const Projects = () => {
         SiTypescript,
         SiGit,
       ],
-      link: '#',
+      link: 'https://videocave.vercel.app',
       cover: '/videocave-homescreen.png',
       background: 'bg-cyan-600',
     },
     {
       title: 'Developer Portfolio',
       tech: [SiNextdotjs, SiTailwindcss],
-      link: 'https://next-dev-portfolio-zeta.vercel.app/',
+      link: 'https://lavishpalia.com/',
       cover: '/next-portfolio.png',
       background: 'bg-indigo-500',
     },
@@ -70,7 +70,7 @@ const Projects = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
         {projects.map((project, index) => {
           return (
-            <Link href={project.link} key={index}>
+            <Link href={project.link} key={index} target='_blank'>
               <div className={cn('p-5 rounded-md', project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
